@@ -1,0 +1,9 @@
+.group-films{
+    border: solid 2px green;
+}
+.group-films-cards{
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}

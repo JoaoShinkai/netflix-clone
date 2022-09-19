@@ -1,0 +1,12 @@
+.film-card{
+    border: solid 2px red;
+    min-width: 300px;
+    width: 300px;
+    height: 166px;
+    position: relative;
+}
+.film-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
