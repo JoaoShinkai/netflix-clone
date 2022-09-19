@@ -82,6 +82,7 @@ nav ul:nth-child(2) li a{
     overflow: hidden;
     transition: .3s;
     transition-delay: .2s;
+    z-index: 9999;
 }
 .profile-popup div{
     padding: 8px;

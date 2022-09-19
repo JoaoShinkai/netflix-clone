@@ -1,9 +1,10 @@
 .group-films{
-    border: solid 2px green;
+    padding: 8px;
 }
 .group-films-cards{
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
+    gap: 8px;
 }
