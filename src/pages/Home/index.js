@@ -17,9 +17,8 @@ export default function Home(){
                 }
             })
 
-            // console.log(response.data.results.slice(0,10))
-
             setFilmes(response.data.results.slice(0,10));
+
         }
 
         loadFilmes()
@@ -27,15 +26,14 @@ export default function Home(){
 
     return(
         <div className='container'>
+            <div className='main'>
+                <div></div>
+            </div>
             <div className='group-films'>
                 <div className='group-films-title'>Em cartaz</div>
                 <div className='group-films-cards'>
                     {filmes.map(filme => {
                         return(
-                            // <div key={filme.id}>
-                            //     {filme.title}
-                            //     <img src={`https://image.tmdb.org/t/p/original/${filme.poster_path}`} alt={filme.title} />
-                            // </div>
                             <Film film={filme}></Film>
                         )
                     })}

@@ -11,3 +11,48 @@
     height: 100%;
     object-fit: cover;
 }
+.film-card-info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow:inset 0 0 0px 0 #2b2b2b;
+    transition: .5s;
+    opacity: 0;
+}
+.film-card:hover .film-card-info{
+    box-shadow:inset 0 0 120px 0 #2b2b2b;
+    opacity: 1;
+}
+.film-card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.film-card-info-group{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+}
+.film-card-info-title{
+    width: 100%;
+    color: white;
+    font-weight: bold;
+}
+.classification{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 4px;
+}
+.classification-18{
+    background-color: crimson;
+}
+.classification-l{
+    background-color: #00aa4e;
+}
