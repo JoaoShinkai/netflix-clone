@@ -1,14 +1,15 @@
-.main{
-    border: solid 2px red;
-    min-height: 80vh;
-}
 
+.main{
+    height: 42vw;
+}
 .container{
     background-color: #141414;
 }
 .group-films{
-    padding: 8px 0;
+    padding: 14px 0;
+    position: relative;
 }
+
 .group-films-cards{
     display: flex;
     overflow-x: auto;
@@ -17,9 +18,9 @@
     gap: 8px;
 }
 .group-films-title{
-    padding: 8px 56px;
+    padding: 18px 56px;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
 }
 .group-films-cards > div:first-child{

@@ -1,9 +1,15 @@
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #141414;
+    background-color: transparent;
     padding: 8px 20px;
-    position: relative;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    transition: .5s;
+}
+.navbarSolidColor{
+    background-color: #141414;
 }
 nav ul{
     list-style: none;
@@ -21,13 +27,6 @@ nav ul li a{
     text-decoration: none;
     padding: 2px;
 }
-nav ul:nth-child(1){
-    
-}
-
-nav ul:nth-child(1) li{
-    
-}
 nav ul:nth-child(2){
     grid-gap: 18px;
 }
@@ -36,7 +35,7 @@ nav ul:nth-child(2) li a{
 }
 
 .logo{
-    max-width: 150px;
+    max-width: 130px;
     margin-right:15px;
 }
 .logo img {
