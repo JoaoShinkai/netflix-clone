@@ -1,6 +1,6 @@
 
 .main{
-    height: 42vw;
+    height: clamp(50vh, 42vw, 1500px);
 }
 .container{
     background-color: #141414;

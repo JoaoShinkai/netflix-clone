@@ -28,7 +28,7 @@
 .film-card-info{
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .film-card-info-group{
     display: flex;
