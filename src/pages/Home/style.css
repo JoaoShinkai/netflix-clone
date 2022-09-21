@@ -18,14 +18,14 @@
     gap: 8px;
 }
 .group-films-title{
-    padding: 18px 56px;
+    padding: 18px clamp(15px, 4%, 60px);
     color: white;
     font-size: 22px;
     font-weight: bold;
 }
 .group-films-cards > div:first-child{
-    margin-left: 56px;
+    margin-left: clamp(15px, 4%, 60px);
 }
 .group-films-cards > div:last-child{
-    margin-right: 56px;
+    margin-right: clamp(15px, 4%, 60px);
 }

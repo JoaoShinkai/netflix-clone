@@ -56,6 +56,7 @@ nav ul:nth-child(2) li a{
     max-height: 240px;
     padding: 10px;
     transition-delay: 0s;
+    border: solid 1px gray;
 }
 .profile-icon-group .arrow-icon{
     transition: .3s;
@@ -80,12 +81,13 @@ nav ul:nth-child(2) li a{
     padding: 0px 10px;
     top: calc(100% + 3px);
     right: 30px;
-    background-color: #141414;
+    background-color: #141414e6;
     max-height: 0px;
     overflow: hidden;
     transition: .3s;
     transition-delay: .2s;
     z-index: 9999;
+    border: solid 0px rgb(43, 43, 43);
 }
 .profile-popup div{
     padding: 8px;
