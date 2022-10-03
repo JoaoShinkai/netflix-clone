@@ -4,6 +4,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding-top: 64px;
 }
 .movie-detail-container-group{
     display: flex;
@@ -11,6 +12,7 @@
     padding: 20px 10px;
     gap: 40px;
     color: white;
+    flex-wrap: wrap;
 }
 .movie-detail-container-image{
     height: 500px;
@@ -33,6 +35,7 @@
 .info-genres{
     padding: 6px 0;
     display: flex;
+    flex-wrap: wrap;
     gap: 6px;
 }
 .info-details{
