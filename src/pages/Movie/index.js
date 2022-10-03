@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { api } from '../../services/api';
 import './style.css';
 
@@ -9,6 +9,7 @@ import Production from '../../components/Production';
 export default function Movie(){
 
     const { id } = useParams();
+    const navigation = useNavigate();
 
     const [movie, setMovie] = useState({});
     const [loading, setLoading] = useState(true);
@@ -27,6 +28,8 @@ export default function Movie(){
                 setLoading(false);
             }catch(err){
                 console.log("Filme não encontrado");
+                navigation("/", { replace: true });
+                return;
             }
             
         }
@@ -36,7 +39,7 @@ export default function Movie(){
         // return() => {
         //     console.log("Componente desmontado")
         // }
-    }, [])
+    }, [navigation, id])
 
     if(loading){
         return(
@@ -54,23 +57,29 @@ export default function Movie(){
     return(
         <div className='movie-detail-container'>
             <div className='movie-detail-container-group'>
-                <div className='movie-detail-container-image'>
-                    <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="" />
+                <div className='movie-detail-container-group-left'>
+                    <div className='movie-detail-container-image'>
+                        <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="" />
+                    </div>
+                    <div className='movie-detail-container-group-btn-trailer'>
+                        <a target="blank" href={`https://youtube.com.br/results?search_query=${movie.title} Trailer`}><i className="fa-solid fa-clapperboard"></i> Ver Trailer</a>
+                    </div>
                 </div>
+                
                 <div className='movie-detail-container-info'>
                     <div className='info-title'>{movie.title}</div>
                     <div className='info-genres'>
                         {
                             movie.genres.map(genre => {
                                 return(
-                                    <Genre genre={genre.name} />
+                                    <Genre key={genre.id} genre={genre.name} />
                                 )
                             })
                         }
                     </div>
                     <div className='info-details'>
-                        <div><i class="fa-solid fa-clock"></i> {movie.runtime}min</div>
-                        <div><i class="fa-solid fa-dollar-sign"></i> {movie.revenue}</div>
+                        <div><i className="fa-solid fa-clock"></i> {movie.runtime}min</div>
+                        <div><i className="fa-solid fa-dollar-sign"></i> {movie.revenue}</div>
                     </div>
                     <div
                      className='info-overview'>{ movie.overview }</div>
@@ -80,7 +89,7 @@ export default function Movie(){
                         {
                             movie.production_companies.map(company => {
                                 return(
-                                    <Production company={company} />
+                                    <Production key={company.id} company={company} />
                                 )
                             })
                         }
