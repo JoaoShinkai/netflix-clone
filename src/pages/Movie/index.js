@@ -24,7 +24,7 @@ export default function Movie(){
                 })
 
                 setMovie(res.data);
-                // setLoading(false);
+                setLoading(false);
             }catch(err){
                 console.log("Filme não encontrado");
             }
