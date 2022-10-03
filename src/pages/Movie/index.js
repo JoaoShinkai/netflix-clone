@@ -24,7 +24,7 @@ export default function Movie(){
                 })
 
                 setMovie(res.data);
-                setLoading(false);
+                // setLoading(false);
             }catch(err){
                 console.log("Filme não encontrado");
             }
@@ -41,7 +41,12 @@ export default function Movie(){
     if(loading){
         return(
             <div className='loading-movie-detail'>
-                <h1>Carregando</h1>
+                <div className='loading-movie-detail-group'>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </div>
         )
     }
