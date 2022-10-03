@@ -23,9 +23,9 @@
     font-size: 22px;
     font-weight: bold;
 }
-.group-films-cards > div:first-child{
+.group-films-cards > a:first-child{
     margin-left: clamp(15px, 4%, 60px);
 }
-.group-films-cards > div:last-child{
+.group-films-cards > a:last-child{
     margin-right: clamp(15px, 4%, 60px);
 }

@@ -1,0 +1,15 @@
+.not-found {
+    background-color: #141414;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    flex-direction: column;
+}
+.not-found-code{
+    color: #d91921;
+    font-size: 120px;
+    font-weight: bold;
+}

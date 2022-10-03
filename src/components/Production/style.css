@@ -1,0 +1,19 @@
+.production{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    border-radius: 8px;
+}
+.production-image{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.production-image img {
+    max-width: 100%;
+    max-height: 100%;
+}

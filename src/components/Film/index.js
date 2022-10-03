@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 import './style.css'
 
 export default function Film(props){
     return(
-        <div className='film-card'>
+        <Link to={`/movie/${props.film.id}`} className='film-card'>
             <img src={`https://image.tmdb.org/t/p/original/${props.film.backdrop_path}`} alt="" />
             <div className='film-card-info'>
                 <div className='film-card-info-group'>
@@ -17,6 +18,6 @@ export default function Film(props){
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }

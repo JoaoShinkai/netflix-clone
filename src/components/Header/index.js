@@ -22,10 +22,10 @@ export default function Header(){
                         <img src={logo} alt="" />
                     </Link>
                 </li>
-                <li class="desktop-element"><Link to="/">Inicio</Link></li>
-                <li class="desktop-element"><Link to="/">Séries</Link></li>
-                <li class="desktop-element"><Link to="/">Filmes</Link></li>
-                <li class="desktop-element"><Link to="/">Bombando</Link></li>
+                <li className="desktop-element"><Link to="/">Inicio</Link></li>
+                <li className="desktop-element"><Link to="/">Séries</Link></li>
+                <li className="desktop-element"><Link to="/">Filmes</Link></li>
+                <li className="desktop-element"><Link to="/">Bombando</Link></li>
             </ul>
             <ul>
                 <li>
